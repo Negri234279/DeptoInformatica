@@ -46,7 +46,3 @@ i {
 .dropdown:hover .dropdownContent {
     display: block;
 }
-
-.active {
-    color: var(--color-pink);
-}

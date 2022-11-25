@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import CustomLink from '../../../../components/CustomLink'
 import style from './CustomLinkDropdown.module.css'
 
 const CustomLinkDropdown = ({ url, title, subjects }) => {
@@ -14,17 +14,6 @@ const CustomLinkDropdown = ({ url, title, subjects }) => {
                 ))}
             </div>
         </div>
-    )
-}
-
-const CustomLink = ({ url, title }) => {
-    return (
-        <NavLink
-            to={url}
-            className={({ isActive }) => (isActive ? style.active : '')}
-        >
-            {title}
-        </NavLink>
     )
 }
 

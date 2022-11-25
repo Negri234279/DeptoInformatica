@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import CustomLink from '../../../../components/CustomLink'
 import style from './CourseMenu.module.css'
 import CustomLinkDropdown from './CustomLinkDropdown'
 
@@ -18,17 +18,6 @@ const CourseMenu = ({ courses }) => {
                 )
             )}
         </div>
-    )
-}
-
-const CustomLink = ({ url, title }) => {
-    return (
-        <NavLink
-            to={url}
-            className={({ isActive }) => (isActive ? style.active : '')}
-        >
-            {title}
-        </NavLink>
     )
 }
 
