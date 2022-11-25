@@ -1,0 +1,36 @@
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: .8rem;
+    text-align: center;
+}
+
+.wrapper {
+    padding: 0px 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
