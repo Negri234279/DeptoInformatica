@@ -1,17 +1,42 @@
 .wrapper {
-    height: 4rem;
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0px 20px;
     font-size: 1.25rem;
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: space-around;
     align-items: center;
+    gap: 5px;
 
     overflow: hidden;
 }
 
 .active, a:hover {
     color: var(--color-pink);
+}
+
+@media screen and (min-width: 525px) {
+    .wrapper {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        padding: 0px 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        padding: 0px 100px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .wrapper {
+        padding: 0px 0px;
+    }
 }

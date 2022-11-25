@@ -14,22 +14,19 @@ const Router = () => {
                 <div id='main'>
                     <Routes>
                         <Route path='/' element={<Home />} />
-                        {courses?.map(
-                            ({ url, title, file, asignaturas }, index) => (
-                                <Route
-                                    key={index}
-                                    path={url}
-                                    element={
-                                        <Curso
-                                            courses={courses}
-                                            asignaturas={asignaturas}
-                                            name={title}
-                                            file={file}
-                                        />
-                                    }
-                                />
-                            )
-                        )}
+                        {courses?.map(({ url, title, file }, index) => (
+                            <Route
+                                key={index}
+                                path={url}
+                                element={
+                                    <Curso
+                                        courses={courses}
+                                        name={title}
+                                        file={file}
+                                    />
+                                }
+                            />
+                        ))}
 
                         {courses.map(({ asignaturas }) =>
                             asignaturas?.map(({ url, title, file }, index) => (
