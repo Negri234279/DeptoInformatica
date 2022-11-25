@@ -12,4 +12,5 @@
 .iframe {
     max-width: 960px;
     max-height: 640px;
+    margin-bottom: 30px;
 }

@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import CustomLink from './CustomLink'
 import style from './Header.module.css'
 
 const pages = [
@@ -9,7 +10,7 @@ const pages = [
 const Header = () => {
     return (
         <header>
-            <div id={style.header}>
+            <div className={style.header}>
                 <div className={style.logo}>
                     <NavLink to={'/'}>
                         <span>Depto</span>
@@ -19,15 +20,7 @@ const Header = () => {
 
                 <div className={style.links}>
                     {pages.map(({ url, title }, index) => (
-                        <NavLink
-                            key={index}
-                            to={url}
-                            className={({ isActive }) =>
-                                isActive ? style.active : ''
-                            }
-                        >
-                            {title}
-                        </NavLink>
+                        <CustomLink key={index} url={url} title={title} />
                     ))}
                 </div>
             </div>
