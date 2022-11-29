@@ -11,7 +11,7 @@
 	--color-lightgray: #cfcfcf;
 	--color-black: #090909;
 	--color-white: #FFFFFF;
-	--color-pink: #EA2845;
+	--color-pink: #13afda;
 
 	/* Shadows */
 	--shadow-sm: 0px 0px 8px rgba(69, 69, 69, 0.3);
@@ -38,11 +38,6 @@ body {
 	background-attachment: fixed;
 	font-family: 'Poppins', sans-serif;
 }
-
-/*#main {
-  max-width: 1280px;
-  margin: 0 auto;
-}*/
 
 h1 {
 	text-align: center;
